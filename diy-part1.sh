@@ -8,7 +8,9 @@
 # https://github.com/P3TERX/Actions-OpenWrt
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
-#
+#dockerman,filebrowser
+git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
+git clone https://github.com/mitsukileung/luci-app-filebrowser.git package/luci-app-filebrowser
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
